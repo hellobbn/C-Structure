@@ -6,10 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		155FC0D81D7AC61300419492 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 155FC0D71D7AC61300419492 /* main.c */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		155FC0D21D7AC61300419492 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -24,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		155FC0D41D7AC61300419492 /* C-Structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C-Structure"; sourceTree = BUILT_PRODUCTS_DIR; };
-		155FC0D71D7AC61300419492 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +36,6 @@
 		155FC0CB1D7AC61300419492 = {
 			isa = PBXGroup;
 			children = (
-				155FC0D61D7AC61300419492 /* C-Structure */,
 				155FC0D51D7AC61300419492 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +46,6 @@
 				155FC0D41D7AC61300419492 /* C-Structure */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		155FC0D61D7AC61300419492 /* C-Structure */ = {
-			isa = PBXGroup;
-			children = (
-				155FC0D71D7AC61300419492 /* main.c */,
-			);
-			path = "C-Structure";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +106,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				155FC0D81D7AC61300419492 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +202,9 @@
 		155FC0DC1D7AC61300419492 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 76FF489E5X;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -225,7 +212,9 @@
 		155FC0DD1D7AC61300419492 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 76FF489E5X;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
